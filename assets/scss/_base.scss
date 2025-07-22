@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Metropolis, sans-serif;
+  color: $neutral600;
+  font-size: $bodyBaseFont;
+  font-weight: $fw-400;
+  line-height: 1.667em;
+}
+
+.container-default {
+  max-width: 1270px;
+  padding-inline: 24px;
+  margin-inline: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+section h1 {
+  color: $neutral800;
+}
+
+.btn.small {
+  border: 1px solid $neutral300;
+  border-radius: $radius12;
+  box-shadow: 0 2px 6px 0 $buttonShadowcolor-01;
+  padding: 18px 24px;
+  font-size: 16px;
+  line-height: 1.125em;
+  font-weight: 600;
+  transition: border-color 0.3s, background-color 0.3s, color 0.3s;
+}

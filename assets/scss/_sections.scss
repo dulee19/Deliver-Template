@@ -1,0 +1,98 @@
+// Hero Section
+#hero {
+  background-color: $neutral200;
+  padding-block-start: 70px;
+  padding-block-end: 152px;
+
+  & h1 {
+    font-size: 62px;
+    line-height: 1.161em;
+    margin-bottom: 16px;
+    color: $neutral800;
+  }
+
+  & .hero-banner img:not(:first-child) {
+    box-shadow: 0 14px 42px 0 $generalShadow-04;
+    border-radius: $radius16;
+  }
+
+  & .hero-banner img:nth-child(2) {
+    top: 40%;
+    left: -5%;
+  }
+  & .hero-banner img:nth-child(3) {
+    bottom: 5%;
+    left: 60%;
+  }
+
+  & .count-item h4 {
+    font-weight: 700;
+    margin-block-end: 0;
+  }
+}
+
+// About Us - Section
+#about-us {
+  padding-block: 166px;
+  & img {
+    border-radius: $radius24;
+  }
+
+  & .inner-container {
+    max-width: 480px;
+  }
+
+  & h1 {
+    font-size: 44px;
+  }
+
+  & .inner-container-mission {
+    max-width: 533px;
+  }
+}
+
+// Our Journey - Section
+#our-journey {
+  background-color: $neutral200;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  & .sticky-content {
+    top: 160px;
+  }
+
+  & h1 {
+    font-size: 44px;
+  }
+
+  & .download-btn {
+    background-color: $accentPrimary-1;
+    padding: 26px 38px;
+
+    &:hover {
+      border-color: $secondaryColor-1;
+      background-color: $secondaryColor-1;
+      color: $neutral100;
+    }
+  }
+
+  & .journey-card {
+    border: 1px solid $neutral300;
+    background-color: $neutral100;
+    box-shadow: 0 2px 12px 0 $generalShadow-02;
+    border-radius: 24px;
+    overflow: hidden;
+    padding: 60px 53px;
+    margin-block-end: 40px;
+
+    & h6 {
+      margin-bottom: 12px;
+      font-size: 22px;
+    }
+    & h4 {
+      color: $neutral800;
+      font-weight: 600;
+      margin-bottom: 32px;
+    }
+  }
+}

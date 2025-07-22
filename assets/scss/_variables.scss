@@ -1,0 +1,66 @@
+// Fonts
+$bodyBaseFont: 18px;
+
+// Font Weight
+$fw-400: 400;
+
+// Colors
+$neutral600: #656565;
+$neutral800: #121212;
+$accentPrimary-1: #ff5634;
+$secondaryColor-2: #fff5f1;
+$neutral300: #ededed;
+$generalShadow-01: #14142b0f;
+$neutral200: #fafafa;
+$neutral100: white;
+$generalShadow-02: #10101014;
+$generalShadow-04: #10101024;
+$secondaryColor-1: #e13f1f;
+$neutral700: #3f3f3f;
+$neutral500: #929292;
+$neutral400: #cacaca;
+$systemGreen-400: #11845b;
+$systemBlue-400: #086cd9;
+$systemBlue-300: #1d88fe;
+$systemBlue-200: #8fc3ff;
+$systemBlue-100: #eaf4ff;
+$systemGreen-300: #05c168;
+$systemGreen-200: #7fdca4;
+$systemGreen-100: #def2e6;
+$systemRed-400: #dc2b2b;
+$system300: #ff5a65;
+$systemRed-200: #ffbec2;
+$systemRed-100: #ffeff0;
+$systemOrange-400: #d5691b;
+$systemOrange-300: #ff9e2c;
+$systemOrange-200: #ffd19b;
+$systemOrange-100: #fff3e4;
+$generalShadow-03: #14142b1a;
+$generalShadow-05: #14142b29;
+$generalShadow-06: #14142b3d;
+$buttonShadowcolor-01: #ff55330f;
+$buttonShadowcolor-2: #ff553314;
+$buttonShadowcolor-3: #ff553314;
+$buttonShadowwhite-01: #1010100a;
+$buttonShadowwhite-02: #14142b0f;
+$buttonShadowwhite-03: #14142b1a;
+$headerBoxShadow: #1212120f;
+
+// Radius
+$radius12: 12px;
+$radius16: 16px;
+$radius24: 24px;
+
+// Margin
+$mb40: 40px;
+
+// Transitions
+$colorTransition: color 0.3s;
+
+.text-accent {
+  color: $accentPrimary-1;
+}
+
+.text-balance {
+  text-wrap: balance;
+}

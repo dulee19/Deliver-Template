@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Assessment Task - Deliver Template" />
+    <meta name="keywords" content="HTML, SCSS, Bootstrap, GSAP" />
+    <meta name="author" content="Dušan Aleksić" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Assessment Task - Deliver Template</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="z-3">
+      <div class="container-default header-wrapper">
+        <div class="d-flex align-items-center justify-content-between">
+          <a href="/" class="logo d-block">
+            <img
+              src="./assets/images/logo.svg"
+              alt="DeliverX - Logo"
+              width="162"
+              decoding="async"
+            />
+          </a>
+
+          <nav class="navbar navbar-expand-md">
+            <div class="collapse navbar-collapse">
+              <ul class="navbar-nav align-items-center gap-md-4 mb-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="/">Home</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="/about">About</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="/pricing">Pricing</a>
+                </li>
+
+                <li class="nav-item dropdown pages-dropdown-content">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="javascript:void(0)"
+                    role="button"
+                  >
+                    Pages
+                  </a>
+                  <div
+                    class="ghost-div d-md-block d-none position-absolute w-100"
+                  ></div>
+                  <ul
+                    class="pages-dropdown-menu dropdown-menu overflow-hidden mt-3"
+                  >
+                    <div class="card-menu">
+                      <div class="card-layout">
+                        <div class="card-inner d-flex gap-5">
+                          <div class="card-menu-list">
+                            <h5>Menu</h5>
+                            <div class="menu-list d-flex">
+                              <div>
+                                <li>
+                                  <a class="dropdown-item" href="#">Home</a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">About</a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">Contact</a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">Blog</a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#"
+                                    >Blog Posts</a
+                                  >
+                                </li>
+                              </div>
+
+                              <div>
+                                <li>
+                                  <a class="dropdown-item" href="#">Plans</a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#"
+                                    >Plan single</a
+                                  >
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">Register</a>
+                                </li>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="card-menu-list">
+                            <h5>Utility pages</h5>
+                            <div>
+                              <li>
+                                <a class="dropdown-item" href="#">Start here</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Styleguide</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#"
+                                  >Password protected</a
+                                >
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#"
+                                  >404 Not found</a
+                                >
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Licenses</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Changelog</a>
+                              </li>
+                              <li>
+                                <a
+                                  class="dropdown-item browse-templates"
+                                  href="#"
+                                  >Browse More Templates</a
+                                >
+                              </li>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="/cart">Cart(0)</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="d-flex gap-2 ms-md-4">
+              <a
+                href="https://delivertemplate.webflow.io/download"
+                class="btn btn-secondary small download-btn"
+                download
+              >
+                Download App
+              </a>
+              <button class="btn small register-btn">Register</button>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="hero">
+        <div class="container-default">
+          <div class="row pb-5">
+            <div class="col-md-7 col-sm-6 col-12">
+              <h6 class="text-uppercase text-accent">
+                <strong>About Deliver X</strong>
+              </h6>
+              <h1>
+                <strong>
+                  We are here to help amazing restaurants get great customers
+                </strong>
+              </h1>
+
+              <p class="text-balance">
+                At morbi adipiscing sit sed consectetur senectus Dignissim sed
+                amet tincidunt vitae ultricies ultrices amet fermentum amet
+                neque et id sed lacinia massa pretium aliquam libero et.
+              </p>
+            </div>
+            <div class="col-md-5 col-sm-6 col-12">
+              <div class="hero-banner position-relative">
+                <picture>
+                  <img
+                    src="./assets/images/delivery-person.png"
+                    alt="Delivery Person"
+                    decoding="async"
+                    loading="eager"
+                  />
+                </picture>
+
+                <img
+                  src="./assets/images/burger.png"
+                  alt="Burger"
+                  width="240"
+                  height="280"
+                  class="object-fit-cover position-absolute"
+                  decoding="async"
+                />
+
+                <img
+                  src="./assets/images/delivery-time.svg"
+                  alt="Delivery Time"
+                  width="290"
+                  height="120"
+                  class="position-absolute"
+                  decoding="async"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-5">
+            <div class="col-12">
+              <div class="counter-delivery">
+                <div
+                  class="d-flex align-items-center justify-content-between flex-wrap"
+                >
+                  <div class="count-item">
+                    <h4 class="display-4 text-black">
+                      10M<span class="text-accent">+</span>
+                    </h4>
+                    <p>Happy customers</p>
+                  </div>
+
+                  <div class="count-item">
+                    <h4 class="display-4 text-black">
+                      500k<span class="text-accent">+</span>
+                    </h4>
+                    <p>Restaurants available</p>
+                  </div>
+
+                  <div class="count-item">
+                    <h4 class="display-4 text-black">
+                      30M<span class="text-accent">+</span>
+                    </h4>
+                    <p>Successful deliveries</p>
+                  </div>
+
+                  <div class="count-item">
+                    <h4 class="display-4 text-black">
+                      99.9<span class="text-accent">%</span>
+                    </h4>
+                    <p>Customer satisfaction</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Us - Section -->
+      <section id="about-us">
+        <div class="container-default">
+          <div class="row pb-5">
+            <div class="col-md-6 col-sm-6 col-12">
+              <picture>
+                <img
+                  src="./assets/images/about-us.jpeg"
+                  alt="About Us"
+                  width="600"
+                  height="720"
+                  decoding="async"
+                  class="img-fluid"
+                />
+              </picture>
+            </div>
+
+            <div
+              class="col-md-6 col-sm-6 col-12 align-self-center mt-5 mt-md-0"
+            >
+              <div class="inner-container ms-auto">
+                <h6 class="text-uppercase text-accent">
+                  <strong>About Us</strong>
+                </h6>
+                <h1 class="mb-3">
+                  <strong>
+                    Our company started back in 2016
+                  </strong>
+                </h1>
+                <p class="text-balance">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto
+                  beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                  quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                  consequuntur magni dolores eos qui ratione voluptatem sequi
+                  nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
+                  dolor sit amet, consectetur.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row pt-5">
+            <div
+              class="col-md-6 col-sm-6 col-12 align-self-center mt-5 mt-md-0"
+            >
+              <div class="inner-container-mission">
+                <h6 class="text-uppercase text-accent">
+                  <strong>Our Mission</strong>
+                </h6>
+                <h1 class="mb-3">
+                  <strong>
+                    Our mission is to disrupt the food industry
+                  </strong>
+                </h1>
+                <p class="text-balance">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto
+                  beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                  quia voluptas sit aspernatur aut odit aut fugit.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-sm-6 col-12">
+              <picture>
+                <img
+                  src="./assets/images/our-mission.jpeg"
+                  alt="Our Mission"
+                  width="600"
+                  height="720"
+                  decoding="async"
+                  class="img-fluid"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Journey -->
+      <section id="our-journey">
+        <div class="container-default">
+          <div class="row">
+            <div class="col-md-6 col-sm-6 col-12">
+              <div class="position-sticky sticky-content">
+                <h6 class="text-uppercase text-accent">
+                  <strong>Our Journey</strong>
+                </h6>
+                <h1>
+                  <strong>
+                    It has been a long but incredible journey
+                  </strong>
+                </h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit tortor
+                  eu egestas morbi sem vulputate etiam facilisis pellentesque ut
+                  quis.
+                </p>
+                <a
+                  href="https://delivertemplate.webflow.io/download"
+                  class="btn btn-secondary small download-btn mt-4"
+                  download
+                >
+                  Download App
+                </a>
+              </div>
+            </div>
+
+            <!-- Journey Cards -->
+            <div class="col-md-6 col-sm-6 col-12">
+              <div class="journey-cards">
+                <div class="journey-card">
+                  <h6 class="text-uppercase text-accent">
+                    <strong>2016</strong>
+                  </h6>
+                  <h4 class="font-bold">Deliver X was founded</h4>
+                  <p class="text-balance">
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque laudantium, totam rem
+                    aperiam, eaque ipsa quae ab illo inventore veritatis et
+                    quasi architecto beatae vitae dicta sunt explicabo. Nemo
+                    enim ipsam.
+                  </p>
+                </div>
+
+                <div class="journey-card">
+                  <h6 class="text-uppercase text-accent">
+                    <strong>2018</strong>
+                  </h6>
+                  <h4 class="font-bold">Raised Series A at $50M valuation</h4>
+                  <p class="text-balance">
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque laudantium, totam rem
+                    aperiam, eaque ipsa quae ab illo inventore veritatis et
+                    quasi architecto beatae vitae dicta sunt explicabo. Nemo
+                    enim ipsam.
+                  </p>
+                </div>
+
+                <div class="journey-card">
+                  <h6 class="text-uppercase text-accent">
+                    <strong>2019</strong>
+                  </h6>
+                  <h4 class="font-bold">Raised Series B at $600M valuation</h4>
+                  <p class="text-balance">
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque laudantium, totam rem
+                    aperiam, eaque ipsa quae ab illo inventore veritatis et
+                    quasi architecto beatae vitae dicta sunt explicabo. Nemo
+                    enim ipsam.
+                  </p>
+                </div>
+
+                <div class="journey-card">
+                  <h6 class="text-uppercase text-accent">
+                    <strong>2022</strong>
+                  </h6>
+                  <h4 class="font-bold">Raised Series C at $3B valuation</h4>
+                  <p class="text-balance">
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque laudantium, totam rem
+                    aperiam, eaque ipsa quae ab illo inventore veritatis et
+                    quasi architecto beatae vitae dicta sunt explicabo. Nemo
+                    enim ipsam.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>Footer</footer>
+  </body>
+</html>

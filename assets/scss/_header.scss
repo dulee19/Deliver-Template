@@ -1,0 +1,96 @@
+// Header
+header {
+  position: sticky;
+  top: 0;
+  background-color: $neutral100;
+  box-shadow: 0 3px 12px $headerBoxShadow;
+
+  & .header-wrapper {
+    padding-block: 24px;
+  }
+
+  & .nav-link {
+    color: $neutral800;
+    position: relative;
+    font-size: 16px;
+  }
+
+  & .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  & .pages-dropdown-content:hover .dropdown-toggle::after {
+    transform: rotate(180deg);
+  }
+
+  & .dropdown-toggle::after {
+    transition: transform 0.2s;
+  }
+
+  & .dropdown-menu {
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.2s ease;
+  }
+
+  .download-btn {
+    background-color: transparent;
+    color: $neutral800;
+    &:hover {
+      border-color: $accentPrimary-1;
+      background-color: $accentPrimary-1;
+      color: $neutral100;
+    }
+  }
+
+  .register-btn {
+    background-color: $accentPrimary-1;
+    color: $neutral100;
+
+    &:hover {
+      border-color: $secondaryColor-1;
+      background-color: $secondaryColor-1;
+      color: $neutral100;
+    }
+  }
+
+  // Card
+  .pages-dropdown-menu {
+    border: 1px solid $neutral300;
+    background-color: $neutral100;
+    box-shadow: 0 2px 12px 0 $generalShadow-02;
+    border-radius: 24px;
+
+    & .card-inner {
+      padding: 60px 40px;
+    }
+  }
+  .card-layout {
+    .dropdown-item {
+      transition: $colorTransition;
+      padding-inline-start: 0;
+
+      &:hover {
+        color: $accentPrimary-1;
+        background: unset;
+      }
+    }
+  }
+
+  .nav-link:hover {
+    color: $accentPrimary-1;
+  }
+
+  .nav-link[href*="/about"] {
+    color: $accentPrimary-1;
+  }
+
+  .ghost-div {
+    height: 30px;
+  }
+}
