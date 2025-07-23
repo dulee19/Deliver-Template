@@ -52,7 +52,10 @@ $radius16: 16px;
 $radius24: 24px;
 
 // Margin
+$mb16: 16px;
+$mb32: 32px;
 $mb40: 40px;
+$mb64: 64px;
 
 // Transitions
 $colorTransition: color 0.3s;
@@ -63,4 +66,21 @@ $colorTransition: color 0.3s;
 
 .text-balance {
   text-wrap: balance;
+}
+
+.mb-16 {
+  margin-block-end: $mb16;
+}
+.mb-32 {
+  margin-block-end: $mb32;
+}
+.mb-40 {
+  margin-block-end: $mb40;
+}
+.mb-64 {
+  margin-block-end: $mb64;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }

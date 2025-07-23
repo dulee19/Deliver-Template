@@ -71,7 +71,8 @@ header {
     }
   }
   .card-layout {
-    .dropdown-item {
+    .dropdown-item,
+    ul {
       transition: $colorTransition;
       padding-inline-start: 0;
 

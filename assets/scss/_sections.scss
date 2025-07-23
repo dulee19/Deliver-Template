@@ -96,3 +96,87 @@
     }
   }
 }
+
+// Our Partners
+#our-partners {
+  padding-block: 166px;
+
+  & .row:first-child .col-12 {
+    margin-block-end: 110px;
+  }
+  & h6 {
+    font-size: 18px;
+  }
+  & h2 {
+    color: $neutral800;
+    font-size: 44px;
+  }
+  & .inner-container {
+    max-width: 700px;
+  }
+
+  & .customers-grid {
+    & h3 {
+      color: $neutral800;
+      font-weight: 700;
+    }
+  }
+}
+
+// Press & News
+#press-news {
+  background-color: $neutral200;
+  padding-block: 166px;
+
+  & .companies-grid {
+    row-gap: 28px;
+  }
+
+  & h6 {
+    font-size: 18px;
+  }
+  & h2 {
+    color: $neutral800;
+    font-size: 44px;
+  }
+
+  & .inner-container {
+    max-width: 620px;
+  }
+
+  & .company-card {
+    border: 1px solid $neutral300;
+    background-color: $neutral100;
+    box-shadow: 0 2px 12px 0 $generalShadow-02;
+    border-radius: 24px;
+    overflow: hidden;
+    padding: 98px 66px;
+    transition: box-shadow 0.3s, transform 0.3s;
+
+    & a {
+      font-weight: 700;
+    }
+
+    & time {
+      color: $neutral600;
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    & img {
+      margin-bottom: 26px;
+    }
+    & h3 {
+      color: $neutral800;
+      font-weight: 700;
+      line-height: 1.429em;
+      margin-bottom: 24px;
+    }
+
+    &:hover {
+      box-shadow: 0 6px 24px 0 $generalShadow-04;
+      color: $neutral600;
+      transform: translate3d(0, -5px, 0.01px);
+    }
+  }
+}

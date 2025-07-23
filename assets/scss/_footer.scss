@@ -1,0 +1,99 @@
+footer {
+  & .footer-top {
+    border-bottom: 1px solid $neutral400;
+    padding-top: 70px;
+    padding-bottom: 83px;
+
+    & img {
+      margin-bottom: 24px;
+    }
+
+    & .btn {
+      border-radius: 14px;
+      padding: 20px 20px 20px 15px;
+      font-size: 16px;
+      line-height: 1.375em;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      border: 1px solid $accentPrimary-1;
+      background-color: $accentPrimary-1;
+      color: $neutral100;
+      border-radius: 16px;
+      padding: 26px 38px;
+      font-weight: 700;
+      line-height: 1.111em;
+      text-decoration: none;
+      transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+
+      &:hover {
+        border-color: $secondaryColor-1;
+        background-color: $secondaryColor-1;
+        color: $neutral100;
+      }
+    }
+  }
+
+  .footer-nav {
+    display: grid;
+    grid-column-gap: 40px;
+    padding-block: 100px;
+    grid-row-gap: 50px;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    grid-auto-columns: 1fr;
+
+    & h3 {
+      font-size: 20px;
+      color: $neutral800;
+      font-weight: 700;
+    }
+
+    & ul {
+      padding-inline-start: 0;
+
+      & li {
+        margin-bottom: 18px;
+        line-height: 1.111em;
+      }
+    }
+
+    & li a {
+      color: $neutral600;
+    }
+
+    .footer-menu {
+      & .menu-list {
+        gap: 40px;
+      }
+    }
+
+    & .available-places {
+      display: grid;
+      grid-column-gap: 29px;
+      grid-row-gap: 13px;
+      grid-template-columns: auto auto;
+
+      & img {
+        border-radius: $radius24;
+      }
+
+      & p {
+        font-weight: 700;
+        color: $neutral800;
+      }
+    }
+  }
+
+  .footer-bottom {
+    border-top: 1px solid $neutral300;
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 16px;
+
+    & a {
+      color: $accentPrimary-1;
+    }
+  }
+}

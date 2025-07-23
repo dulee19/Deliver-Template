@@ -1,0 +1,69 @@
+@media (max-width: 992px) {
+  #hero {
+    padding-top: 60px;
+    padding-bottom: 73px;
+    & h1 {
+      font-size: 52px;
+    }
+
+    & .hero-banner img:nth-child(2) {
+      width: 225px;
+      height: 260px;
+      left: 0;
+      top: 37%;
+    }
+    & .hero-banner img:nth-child(3) {
+      width: 255px;
+      height: 115px;
+      left: 50%;
+      bottom: 7%;
+    }
+
+    & .counter-delivery div {
+      grid-column-gap: 40px;
+      grid-row-gap: 40px;
+      grid-template-columns: auto auto;
+      justify-content: center;
+
+      & h4 {
+        text-align: center;
+      }
+
+      & p {
+        font-size: 16px;
+      }
+    }
+  }
+
+  #about-us {
+    padding-top: 116px;
+    padding-bottom: 116px;
+
+    & .inner-container {
+      max-width: 100%;
+    }
+
+    & img {
+      width: 100%;
+    }
+  }
+
+  footer {
+    & .footer-nav {
+      grid-template-columns: auto auto;
+      justify-content: stretch;
+    }
+
+    & .available-places {
+      grid-template-columns: auto auto;
+
+      & > div {
+        grid-area: span 1 / span 1 / span 1 / span 1;
+      }
+    }
+
+    & .footer-available-in {
+      grid-column: 1 / -1;
+    }
+  }
+}
