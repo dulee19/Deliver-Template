@@ -1,7 +1,112 @@
+// 992px
 @media (max-width: 992px) {
+  header {
+
+    & img {
+      max-width: 150px;
+    }
+
+    & .navbar-collapse {
+      transform: translateY(-200%);
+    }
+    & .navbar-collapse.show {
+      position: fixed;
+      left: 0;
+      top: 95px;
+      right: 0;
+      z-index: 5;
+      background-color: #fff;
+      transform: translateY(0%);
+      transition: all .3s;
+    }
+
+    & .pages-dropdown-menu {
+      height: 0;
+    }
+    
+    & .nav-item.dropdown:hover .dropdown-menu {
+      height: auto;
+    }
+
+    & .navbar-nav {
+      padding-block: 3rem;
+      & .nav-link {
+        font-size: 30px;
+      }
+      & .get-started-btn {
+        margin-top: 2rem;
+        border: 1px solid $accentPrimary-1;
+        background-color: $accentPrimary-1;
+        color: $neutral100;
+        text-align: center;
+        border-radius: 16px;
+        justify-content: center;
+        padding: 26px 38px;
+        font-weight: 700;
+        line-height: 1.111em;
+        text-decoration: none;
+        transition: color .3s, background-color .3s, border-color .3s;
+      }
+    }
+
+    & .responsive-btn {
+      background-color: unset;
+      border: 0;
+      cursor: pointer;
+      margin-inline-start: 10px;
+
+      & span {
+        background-color: $neutral800;
+        transition: 0.3s ease;
+        border-radius: 100px;
+        width: 30px;
+        height: 4px;
+        margin-block: 10px;
+        display: block;
+
+        &:nth-child(2) {
+          width: 20px;
+          margin-inline-start: auto;
+        }
+      }
+
+      &.open {
+        span {
+          &:first-child {
+            transform: rotate(45deg) translate(5px, 5px);
+            width: 30px;
+          }
+
+          &:nth-child(2) {
+            transform: rotate(-45deg) translate(5px, -5px);
+            width: 30px;
+            margin-inline-start: 0;
+          }
+        }
+      }
+    }
+  }
+
+
+  section h6 {
+    font-size: 18px;
+  }
+
   #hero {
-    padding-top: 60px;
-    padding-bottom: 73px;
+    padding-top: 70px;
+    padding-bottom: 88px;
+
+    & .row:first-child {
+      max-width: 680px;
+      margin-inline: auto;
+    }
+
+    & picture img {
+      max-width: 85%;
+      margin-inline: auto;
+      margin-block-start: 60px;
+    }
+
     & h1 {
       font-size: 52px;
     }
@@ -36,10 +141,22 @@
   }
 
   #about-us {
-    padding-top: 116px;
-    padding-bottom: 116px;
+    padding-block: 138px;
+
+    & h1 {
+      font-size: 38px;
+    }
 
     & .inner-container {
+      max-width: 680px;
+      margin-inline: auto;
+
+      & p {
+        margin-block-end: 60px;
+      }
+    }
+
+    & .inner-container-mission {
       max-width: 100%;
     }
 
@@ -48,7 +165,116 @@
     }
   }
 
+  #our-journey {
+    padding-block: 138px;
+
+    & .position-sticky {
+      margin-bottom: 64px !important;
+    }
+
+    & .inner-container {
+      max-width: 680px;
+      margin-inline: auto;
+    }
+
+    & h1 {
+      font-size: 38px;
+      text-wrap: balance;
+    }
+
+    .journey-cards {
+      & .journey-card {
+        padding: 60px 53px;
+
+        & h4 {
+          font-size: 24px;
+          margin-block-end: 24px;
+        }
+
+        & p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  #our-partners {
+    padding-block: 116px;
+
+    & .inner-container {
+      max-width: 700px;
+      margin-inline: auto;
+    }
+
+    & h2 {
+      font-size: 38px;
+    }
+    .customers-grid {
+      & h3 {
+        font-size: 23px;
+      }
+      & p {
+        font-size: 16px;
+        text-wrap: balance;
+      }
+    }
+
+    & h6 {
+      font-size: 18px;
+    }
+    
+  }
+
+  #press-news {
+    padding-block: 138px;
+
+    & .inner-container {
+      max-width: 680px;
+      margin-inline: auto;
+    }
+
+    & h2 {
+      font-size: 38px;
+    }
+    & h6 {
+      font-size: 18px;
+    }
+
+    & .companies-grid {
+      & .company-card {
+        padding: 58px 34px;
+
+        & h3 {
+          font-size: 23px;
+        }
+
+        & a {
+          font-size: 16px;
+        }
+        & time {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
   footer {
+    & .footer-top {
+      & .logo img {
+        width: 166px;
+        height: 50px;
+      }
+
+      & p {
+        font-size: 16px;
+        margin-block-end: 30px;
+      }
+
+      & a.btn {
+        padding: 20px 20px 20px 15px;
+        line-height: 1.375em;
+      }
+    }
     & .footer-nav {
       grid-template-columns: auto auto;
       justify-content: stretch;
@@ -66,4 +292,218 @@
       grid-column: 1 / -1;
     }
   }
+}
+
+
+// 768px
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  #hero {
+    & h1 {
+      margin-block-end: 10px;
+      font-size: 43px;
+    }
+    & p {
+      text-wrap: unset;
+    }
+
+    & .hero-banner img:nth-child(2) {
+      width: 210px;
+      height: 245px;
+      left: 0;
+      top: 37%;
+    }
+    & .hero-banner img:nth-child(3) {
+      width: 230px;
+      height: auto;
+      left: 50%;
+      bottom: 7%;
+    }
+  }
+
+  #about-us {
+    & h1 {
+      font-size: 32px;
+    }
+    & p {
+      text-wrap: unset;
+      padding-block-end: 50px;
+    }
+  }
+
+  #our-partners {
+    & h2 {
+      text-wrap: unset;
+    }
+  }
+
+  .footer-nav {
+    & .available-places {
+      & img {
+        border-radius: 10px !important;
+        width: 54px;
+      }
+    }
+  }
+}
+
+// 576px
+@media (max-width: 576px) {
+  body {
+    font-size: 16px;
+  }
+
+  #hero {
+    & h1 {
+      font-size: 36px;
+    }
+    & h6 {
+      margin-block-end: 22px;
+    }
+   
+    & .hero-banner img:nth-child(2) {
+      width: 170px;
+      height: 200px;
+      left: -2%;
+      top: 37%;
+    }
+    & .hero-banner img:nth-child(3) {
+        width: 185px;
+        height: auto;
+        left: 50%;
+        bottom: 5%;
+    }
+
+    & .counter-delivery div {
+      grid-column-gap: 30px;
+      grid-row-gap: 30px;
+    }
+  }
+
+  #about-us {
+    padding-block: 96px;
+    & h1 {
+      font-size: 28px;
+    }
+    & p {
+      text-wrap: unset;
+      padding-block-end: 50px;
+    }
+  }
+
+  #our-partners {
+    & h2 {
+      text-wrap: unset;
+    }
+  }
+
+  #our-journey {
+    padding-block: 96px;
+    & h1 {
+      font-size: 28px;
+    }
+
+    & .position-sticky {
+      p {
+        margin-block-end: 40px;
+      }
+    }
+
+    & .download-btn {
+      width: 100%;
+      padding-block: 24px;
+    }
+
+    & .journey-cards {
+      & .journey-card {
+        padding: 42px 25px;
+      }
+    }
+  }
+
+  #our-partners {
+    padding-block: 96px;
+
+    & h2 {
+      font-size: 28px;
+    }
+
+    & picture {
+      margin-block-end: 0;
+
+      & img {
+        max-width: 150px;
+      }
+    }
+  }
+
+  #press-news {
+    padding-block: 96px;
+
+    & h2 {
+      font-size: 28px;
+    }
+
+    & .companies-grid {
+      & .company-card {
+        padding: 48px 25px;
+
+        & div {
+          flex-direction: column-reverse;
+          gap: .5rem;
+
+          & p {
+            text-wrap: unset;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    & .footer-top {
+      padding-top: 60px;
+      padding-bottom: 70px;
+
+      & p {
+        max-width: 480px;
+      }
+
+      & img {
+        max-width: 140px;
+        margin-bottom: .5rem;
+      }
+    }
+    & .footer-nav {
+      grid-template-columns: auto;
+      & .available-places {
+        grid-template-columns: auto;
+        & img {
+          border-radius: 10px !important;
+          width: 60px;
+        }
+
+        & p {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+    #about-us {
+      & .inner-container-company {
+        max-width: 480px;
+      }
+    }
+    #our-partners {
+      & .inner-container-top {
+        max-width: 700px;
+        margin-inline: auto;
+      }
+    }
 }

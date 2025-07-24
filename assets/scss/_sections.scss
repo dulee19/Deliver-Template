@@ -38,10 +38,6 @@
     border-radius: $radius24;
   }
 
-  & .inner-container {
-    max-width: 480px;
-  }
-
   & h1 {
     font-size: 44px;
   }
@@ -111,9 +107,6 @@
     color: $neutral800;
     font-size: 44px;
   }
-  & .inner-container {
-    max-width: 700px;
-  }
 
   & .customers-grid {
     & h3 {
@@ -129,7 +122,7 @@
   padding-block: 166px;
 
   & .companies-grid {
-    row-gap: 28px;
+    row-gap: 24px;
   }
 
   & h6 {
@@ -138,10 +131,6 @@
   & h2 {
     color: $neutral800;
     font-size: 44px;
-  }
-
-  & .inner-container {
-    max-width: 620px;
   }
 
   & .company-card {
